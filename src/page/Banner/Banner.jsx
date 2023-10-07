@@ -1,4 +1,3 @@
-import banner from "../../assets/banner.png";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 const Banner = () => {
   return (
@@ -8,7 +7,7 @@ const Banner = () => {
           <div className="flex flex-col-reverse  md:flex-row justify-between items-center gap-5 p-2">
             <div className=" space-y-3">
               <h1 className="text-3xl font-bold text-white">devConf23</h1>
-              <h2 className="text-3xl md:text-5xl font-bold text-[#387DF8]">
+              <h2 className="text-3xl md:text-5xl font-bold inline-block p-2 rounded-md bg-[#1306098e] text-[#387DF8]">
                 The 2023 Developer Conference
               </h2>
               <p className="text-white text-lg">

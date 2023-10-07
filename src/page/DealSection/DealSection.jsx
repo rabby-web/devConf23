@@ -6,7 +6,7 @@ const DealSection = () => {
   return (
     <div>
       <div className="w-full flex justify-center">
-        <button className="text-white bg-[#387DF8]  py-3 px-5 text-2xl font-semibold">
+        <button className="text-white bg-[#387DF8] rounded py-3 px-5 text-2xl font-semibold">
           Developer Guidance
         </button>
       </div>

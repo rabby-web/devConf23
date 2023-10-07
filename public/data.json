@@ -23,10 +23,10 @@
         "title": "How to Became a PHP Developer",
         "price": "360",
         "trainer": {
-            "image": "https://devconfbd.com/_next/image?url=%2Fimages%2Fspeakers%2Fjhankar.png&w=384&q=75",
-            "name": "Jhankar Mahbub",
-            "designation": " He serves as a senior web developer, author, YouTuber, teacher, and entrepreneur all at the same time.",
-            "company": "Founder, Programming Hero"
+            "image": "https://devconfbd.com/_next/image?url=%2Fimages%2Fspeakers%2Fhasin-vai.png&w=384&q=75",
+            "name": "Hasin Hayder",
+            "designation": "I am a Full Stack Developer with a passion for modern technologies and I specialize in using PHP, JavaScript, Alpine.js, Vue.js, React.js, Laravel, and other headless technologies to create intuitive and scalable web applications. With extensive experience in API development, RDBMS, and system architecture, I am adept at designing and implementing efficient solutions for complex projects. I am also proficient in WordPress, providing end-to-end solutions for clients.",
+            "company": "Founder & Educator, Learn With Hasin Hayder"
           }
       },
       {
@@ -38,10 +38,10 @@
         "title": "The Future of App Development",
         "price": "360",
         "trainer": {
-            "image": "https://devconfbd.com/_next/image?url=%2Fimages%2Fspeakers%2Fjhankar.png&w=384&q=75",
-            "name": "Jhankar Mahbub",
-            "designation": " He serves as a senior web developer, author, YouTuber, teacher, and entrepreneur all at the same time.",
-            "company": "Founder, Programming Hero"
+            "image": "https://devconfbd.com/_next/image?url=%2Fimages%2Fspeakers%2Frabbil.png&w=384&q=75",
+            "name": "Rabbil Hasan Rupom",
+            "designation": "Rabbil Hasan is the leading popular face among Bangladeshi programmer’s community. He is working on web & mobile application development more than 6 years. Research & development, teaching, community leading is the top most noticeable skill inside him.",
+            "company": "Founder & Educator, Learn with Rabbil Hasan"
           }
       },
       {
@@ -53,10 +53,10 @@
         "title": "Important of MERN/Full-Stack Stack",
         "price": "360",
         "trainer": {
-            "image": "https://devconfbd.com/_next/image?url=%2Fimages%2Fspeakers%2Fjhankar.png&w=384&q=75",
-            "name": "Jhankar Mahbub",
-            "designation": " He serves as a senior web developer, author, YouTuber, teacher, and entrepreneur all at the same time.",
-            "company": "Founder, Programming Hero"
+            "image": "https://devconfbd.com/_next/image?url=%2Fimages%2Fspeakers%2Fnayem.png&w=384&q=75",
+            "name": "HM Nayem",
+            "designation": "HM Nayem is an accomplished full-stack (MERN) web application developer, cloud practitioner, competitive coder, entrepreneur, and educator who constantly looks for new challenges to tackle in the real world. In addition to working with reputable IT firms, Hasan founded Stack Learner, an ed-tech firm that has educated 130,000 people on contemporary technologies. He always gives his best to clients, enhances quality, keeps learning, and shares his expertise with others.",
+            "company": "Founder & Educator, Stack Learner"
           }
       },
       {
@@ -68,10 +68,10 @@
         "title": "Think Like a SWE",
         "price": "360",
         "trainer": {
-            "image": "https://devconfbd.com/_next/image?url=%2Fimages%2Fspeakers%2Fjhankar.png&w=384&q=75",
-            "name": "Jhankar Mahbub",
-            "designation": " He serves as a senior web developer, author, YouTuber, teacher, and entrepreneur all at the same time.",
-            "company": "Founder, Programming Hero"
+            "image": "https://devconfbd.com/_next/image?url=%2Fimages%2Fspeakers%2Fmamun-abdullah.png&w=384&q=75",
+            "name": "Abdullah Al Mamun",
+            "designation": "5+ years predominantly working in an Agile environment and demonstrated expertise in E2E Machine Learning pipeline. Besides, he is the champion of GCC Robotics Challenge'17 at Qatar, organized by IEEE/IET. He liked to do fishing, traveling, and photography.",
+            "company": "Machine Learning Engineer at Meta"
           }
       },
       {
@@ -83,10 +83,10 @@
         "title": "Machine Learning",
         "price": "360",
         "trainer": {
-            "image": "https://devconfbd.com/_next/image?url=%2Fimages%2Fspeakers%2Fjhankar.png&w=384&q=75",
-            "name": "Jhankar Mahbub",
-            "designation": " He serves as a senior web developer, author, YouTuber, teacher, and entrepreneur all at the same time.",
-            "company": "Founder, Programming Hero"
+            "image": "https://devconfbd.com/_next/image?url=%2Fimages%2Fspeakers%2Fzulkaernine.png&w=384&q=75",
+            "name": "Zulkarnine Mahmud",
+            "designation": "Experienced Software Engineer with a demonstrated history of working in the internet and automotive industry. Skilled in C++, Python, CMake, Bash, Java and many other technology stacks.",
+            "company": "Software Engineer, Google"
           }
       }
      
