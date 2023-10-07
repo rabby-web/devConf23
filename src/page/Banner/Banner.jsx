@@ -7,7 +7,7 @@ const Banner = () => {
         <div className="text-center bg-[#1f07255e] h-full w-full flex items-center justify-center">
           <div className="flex flex-col-reverse  md:flex-row justify-between items-center gap-5 p-2">
             <div className=" space-y-3">
-              <h1 className="text-3xl font-bold text-white">Dev Library</h1>
+              <h1 className="text-3xl font-bold text-white">devConf23</h1>
               <h2 className="text-3xl md:text-5xl font-bold text-[#387DF8]">
                 The 2023 Developer Conference
               </h2>
