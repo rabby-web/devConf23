@@ -1,6 +1,7 @@
 import { MdLocationPin, MdAccessTimeFilled } from "react-icons/md";
+import { Link } from "react-router-dom";
 const Cart = ({ cart }) => {
-  const { location, img, title, time, description, price } = cart || {};
+  const { id, location, img, title, time, description, price } = cart || {};
   return (
     <div>
       <div className="flex items-center justify-center my-5 ">
@@ -29,27 +30,29 @@ const Cart = ({ cart }) => {
               <div className="flex justify-between text-xl font-bold text-[#387DF8]">
                 <h2>Price: {price}$</h2>
                 <a className="inline-block" href="#">
-                  <button
-                    className="flex bg-[#387DF8] select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all  disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                    type="button"
-                  >
-                    Details
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="2"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                      className="h-4 w-4"
+                  <Link to={`/cart/${id}`}>
+                    <button
+                      className="flex bg-[#387DF8] select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all  disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                      type="button"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                      ></path>
-                    </svg>
-                  </button>
+                      Details
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth="2"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        className="h-4 w-4"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                        ></path>
+                      </svg>
+                    </button>
+                  </Link>
                 </a>
               </div>
             </div>

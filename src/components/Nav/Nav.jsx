@@ -18,7 +18,7 @@ const Nav = () => {
           Home
         </NavLink>
       </li>
-      <li className="text-xl font-bold">
+      {/* <li className="text-xl font-bold">
         <NavLink
           to="/details"
           className={({ isActive, isPending }) =>
@@ -31,7 +31,7 @@ const Nav = () => {
         >
           Details
         </NavLink>
-      </li>
+      </li> */}
       <li className="text-xl font-bold">
         <NavLink
           to="/login"
