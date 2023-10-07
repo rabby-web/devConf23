@@ -1,7 +1,9 @@
+import CartDetails from "../CartDetails/CartDetails";
+
 const Details = () => {
   return (
     <div>
-      <h2>Details</h2>
+      <CartDetails></CartDetails>
     </div>
   );
 };

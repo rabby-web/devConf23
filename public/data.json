@@ -1,0 +1,32 @@
+ [
+      {
+        "id": "1",
+        "img": "https://i.ibb.co/fSd6DLb/Rectangle-4287-2.png",
+        "location": "Dhaka Bangladesh",
+        "time": "2023-10-15, 10.30PM",
+        "description": " Full-stack (MERN) web application developer, cloud practitioner, competitive coder, entrepreneur, and educator who constantly looks for new challenges to tackle in the real world. ",
+        "title": "How to learn Wev Development",
+        "trainer": {
+            "image": "https://devconfbd.com/_next/image?url=%2Fimages%2Fspeakers%2Fjhankar.png&w=384&q=75",
+            "name": "Jhankar Mahbub",
+            "designation": " He serves as a senior web developer, author, YouTuber, teacher, and entrepreneur all at the same time.",
+            "company": "Founder, Programming Hero"
+          }
+      },
+      {
+        "id": "1",
+        "img": "https://i.ibb.co/fSd6DLb/Rectangle-4287-2.png",
+        "location": "Dhaka Bangladesh",
+        "time": "2023-10-15, 10.30PM",
+        "description": " Full-stack (MERN) web application developer, cloud practitioner, competitive coder, entrepreneur, and educator who constantly looks for new challenges to tackle in the real world. ",
+        "title": "How to learn Wev Development",
+        "trainer": {
+            "image": "https://devconfbd.com/_next/image?url=%2Fimages%2Fspeakers%2Fjhankar.png&w=384&q=75",
+            "name": "Jhankar Mahbub",
+            "designation": " He serves as a senior web developer, author, YouTuber, teacher, and entrepreneur all at the same time.",
+            "company": "Founder, Programming Hero"
+          }
+      }
+     
+    ]
+ 

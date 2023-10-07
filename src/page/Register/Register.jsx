@@ -1,74 +1,64 @@
-// import { useContext, useState } from "react";
-// import { FaEye, FaEyeSlash } from "react-icons/fa";
-// import { AuthContext } from "../../provider/AuthProvider";
-// import { Link } from "react-router-dom";
-// import swal from "sweetalert";
-// import {
-//   sendEmailVerification,
-//   updatePhoneNumber,
-//   updateProfile,
-// } from "firebase/auth";
-
+import { useContext, useState } from "react";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import swal from "sweetalert";
+import { updateProfile } from "firebase/auth";
+import { AuthContext } from "../../provider/AuthProvider";
+
+// import { Link } from "react-router-dom";
 
 const Register = () => {
-  //   const { createUser } = useContext(AuthContext);
-  //   const [isShow, setIsShow] = useState(false);
-  //   const [registerError, setRegisterError] = useState("");
-  //   const [success, setSuccess] = useState("");
-  //   //handleRegister
-  //   const handleRegister = (e) => {
-  //     e.preventDefault();
-  //     const name = e.target.name.value;
-  //     const email = e.target.email.value;
-  //     const password = e.target.password.value;
-  //     const accepted = e.target.terms.checked;
-  //     console.log(name, email, password, accepted);
-  //     // password validation
-  //     if (password.length < 6) {
-  //       setRegisterError("password should be at least 6 characters or longer");
-  //       return;
-  //     } else if (!/[A-Z]/.test(password)) {
-  //       setRegisterError("Your Password should have at least one Uppercase");
-  //       return;
-  //     } else if (!accepted) {
-  //       setRegisterError("Please accept our terms and condition");
-  //       return;
-  //     }
-  //     // rest error
-  //     setRegisterError("");
-  //     setSuccess("");
-  //     // create user
-  //     createUser(email, password)
-  //       .then((result) => {
-  //         console.log(result.user);
-  //         e.target.reset();
-  //         setSuccess("User create successfully");
-  //         // update profile
-  //         updateProfile(result.user, {
-  //           displayName: name,
-  //           photoURL: "https://example.com/jane-q-user/profile.jpg",
-  //         }).catch((error) => console.error(error));
-  //         // send verification email
-  //         sendEmailVerification(result.user).then(() => {
-  //           swal(
-  //             "Check Email!",
-  //             "Please Check Your Email and Verify Your Account!"
-  //           );
-  //         });
+  const { createUser } = useContext(AuthContext);
+  const [isShow, setIsShow] = useState(false);
+  const [registerError, setRegisterError] = useState("");
+  const [success, setSuccess] = useState("");
+  //handleRegister
+  const handleRegister = (e) => {
+    e.preventDefault();
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    // const accepted = e.target.terms.checked;
+    console.log(name, email, password);
+    // password validation
+    if (password.length < 6) {
+      setRegisterError("password should be at least 6 characters or longer");
+      return;
+    } else if (!/[A-Z]/.test(password)) {
+      setRegisterError("Your Password should have at least one Uppercase");
+      return;
+    } else if (!/(?=.*[A-Z >>!#$%&? "<<])/.test(password)) {
+      setRegisterError("Your Password should have at least one Uppercase");
+      return;
+    }
+    // rest error
+    setRegisterError("");
+    setSuccess("");
+    // create user
+    createUser(email, password)
+      .then((result) => {
+        console.log(result.user);
+        e.target.reset();
+        setSuccess("User create successfully");
+        // update profile
+        updateProfile(result.user, {
+          displayName: name,
+          photoURL: "https://example.com/jane-q-user/profile.jpg",
+        }).catch((error) => console.error(error));
+        // send verification email
 
-  //         swal({
-  //           title: "Success",
-  //           text: "Registration Successfully",
-  //           icon: "success",
-  //           button: "Register Complete",
-  //         });
-  //       })
-  //       .catch((error) => {
-  //         console.error(error);
-  //         setRegisterError(error.message);
-  //       });
-  //   };
+        swal({
+          title: "Success",
+          text: "Registration Successfully",
+          icon: "success",
+          button: "Register Complete",
+        });
+      })
+      .catch((error) => {
+        console.error(error);
+        setRegisterError(error.message);
+      });
+  };
   return (
     <div>
       <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
@@ -77,7 +67,7 @@ const Register = () => {
             <h1 className="text-xl font-bold leading-tight tracking-tight text-[#387DF8] md:text-2xl">
               Register to your account
             </h1>
-            <form className="space-y-4 md:space-y-6">
+            <form onSubmit={handleRegister} className="space-y-4 md:space-y-6">
               <div>
                 <label
                   htmlFor="email"
@@ -119,19 +109,19 @@ const Register = () => {
                 </label>
                 <div className="relative flex items-center">
                   <input
-                    // type={isShow ? "text" : "password"}
+                    type={isShow ? "text" : "password"}
                     name="password"
                     id="password"
                     placeholder="Password"
                     className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg  block w-full p-2.5  "
                     required=""
                   />
-                  {/* <span
+                  <span
                     className="top-0 -ms-7"
                     onClick={() => setIsShow(!isShow)}
                   >
                     {isShow ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}
-                  </span> */}
+                  </span>
                 </div>
               </div>
               {/* <div className="flex items-center justify-between">
@@ -168,16 +158,16 @@ const Register = () => {
               <p className="text-base text-center font-light text-gray-900">
                 Don’t have an account yet?{" "}
                 <Link to="/login">
-                  <a
+                  <button
                     href="#"
                     className="font-semibold text-[#387DF8] hover:underline "
                   >
                     Login
-                  </a>
+                  </button>
                 </Link>
               </p>
               <div className="text-center">
-                {/* {registerError && (
+                {registerError && (
                   <div>
                     <p className="text-red-600 font-bold">{registerError}</p>
                   </div>
@@ -186,7 +176,7 @@ const Register = () => {
                   <div className="text-blue-600 font-bold">
                     <p>{success}</p>
                   </div>
-                )} */}
+                )}
               </div>
             </form>
           </div>
