@@ -1,47 +1,57 @@
-import { TbTruckDelivery } from "react-icons/tb";
+import { PiPlugsConnectedFill } from "react-icons/pi";
+import { BiSolidUserAccount } from "react-icons/bi";
+import { GiSkills } from "react-icons/gi";
+import { MdJoinInner } from "react-icons/md";
 const DealSection = () => {
   return (
     <div>
-      <div>
-        <div>
-          <div className="text-6xl text-[#1B8BCB]">
-            <TbTruckDelivery></TbTruckDelivery>
+      <div className="w-full flex justify-center">
+        <button className="text-white bg-[#387DF8]  py-3 px-5 text-2xl font-semibold">
+          Developer Guidance
+        </button>
+      </div>
+      <div className="text-[#387DF8] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 m-2">
+        <div className="border flex justify-center items-center gap-4 p-3">
+          <div className="text-6xl ">
+            <PiPlugsConnectedFill></PiPlugsConnectedFill>
           </div>
           <div>
-            <h2>Quick Delivery</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi,
-              accusantium!
+            <p className="text-xl font-medium">
+              Connect with peers, industry experts, and potential employers to
+              expand their network.
             </p>
           </div>
         </div>
-        <div>
-          <h1>Icon</h1>
+        <div className="border flex justify-center items-center gap-4 p-3">
+          <div className="text-6xl">
+            <BiSolidUserAccount></BiSolidUserAccount>
+          </div>
           <div>
-            <h2>Pay with Easy</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi,
-              accusantium!
+            <p className="text-xl font-medium">
+              Expert-led sessions to guide them through the maze of development
+              challenges.
             </p>
           </div>
         </div>
-        <div>
-          <h1>Icon</h1>
+        <div className="border flex justify-center items-center gap-4 p-3">
+          <div className="text-6xl ">
+            <MdJoinInner></MdJoinInner>
+          </div>
           <div>
-            <h2>Best Deal</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi,
-              accusantium!
+            <p className="text-xl font-medium">
+              Join a supportive community of developers and collaborate on
+              exciting projects.
             </p>
           </div>
         </div>
-        <div>
-          <h1>Icon</h1>
+        <div className="border flex justify-center items-center gap-4 p-3">
+          <div className="text-6xl ">
+            <GiSkills></GiSkills>
+          </div>
           <div>
-            <h2>Secured Payment</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi,
-              accusantium!
+            <p className="text-xl font-medium">
+              Acquire new skills and stay up-to-date with the latest trends in
+              tech.
             </p>
           </div>
         </div>

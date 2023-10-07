@@ -11,8 +11,8 @@ const Nav = () => {
             isPending
               ? "pending "
               : isActive
-              ? " bg-[#1B8BCB] text-white"
-              : "text-[#1B8BCB]"
+              ? " bg-[#387DF8] text-white"
+              : "text-[#387DF8]"
           }
         >
           Home
@@ -25,8 +25,8 @@ const Nav = () => {
             isPending
               ? "pending "
               : isActive
-              ? " bg-[#1B8BCB] text-white"
-              : "text-[#1B8BCB]"
+              ? " bg-[#387DF8] text-white"
+              : "text-[#387DF8]"
           }
         >
           Details
@@ -39,8 +39,8 @@ const Nav = () => {
             isPending
               ? "pending "
               : isActive
-              ? " bg-[#1B8BCB] text-white"
-              : "text-[#1B8BCB]"
+              ? " bg-[#387DF8] text-white"
+              : "text-[#387DF8]"
           }
         >
           login
@@ -53,8 +53,8 @@ const Nav = () => {
             isPending
               ? "pending "
               : isActive
-              ? " bg-[#1B8BCB] text-white"
-              : "text-[#1B8BCB]"
+              ? " bg-[#387DF8] text-white"
+              : "text-[#387DF8]"
           }
         >
           Register
@@ -90,8 +90,7 @@ const Nav = () => {
             </ul>
           </div>
           <a className="p-2 flex gap-4 items-center font-bold text-2xl">
-            <img className="w-20 " src={logo} alt="" />
-            <p className="hidden md:block text-[#1B8BCB]">Dev Library</p>
+            <p className="hidden md:block text-[#387DF8]">DevConf 23</p>
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -100,7 +99,7 @@ const Nav = () => {
         <div className="navbar-end">
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-              <div className="w-10 border-2 border-[#1B8BCB] rounded-full">
+              <div className="w-10 border-2 border-[#387DF8] rounded-full">
                 <img src={logo} />
               </div>
             </label>
