@@ -17,13 +17,20 @@ const Details = () => {
     data || {};
 
   return (
-    <div>
+    <div className="bg-slate-200 py-4 my-4 rounded-md">
+      <h1 className="text-center font-bold text-4xl text-[#387DF8]">
+        Event Details
+      </h1>
       <div className="m-5 rounded">
         {/* trainer */}
-        <div className="border rounded bg-slate-200 ">
+        <div className="border bg-slate-50 rounded  md:p-2 lg:p-8 m-2">
           <div className="flex flex-col md:flex-row items-center gap-5">
-            <div className="bg-slate-300 rounded">
-              <img className="max-w-[350px]" src={trainer?.image} alt="" />
+            <div className=" rounded">
+              <img
+                className="max-w-[350px] h-auto"
+                src={trainer?.image}
+                alt=""
+              />
             </div>
             <div className="space-y-3 gap-5 mt-5 md:mt-0 text-center md:text-left">
               <h2 className="text-3xl font-bold bg-[#387DF8] inline-block p-3 rounded text-white">
@@ -38,64 +45,38 @@ const Details = () => {
           </div>
         </div>
         {/* conf */}
-        <div className="border">
-          <div className="flex items-center justify-center my-5 ">
-            <div className="m-3">
-              <div className="relative flex  w-full max-w-[48rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md border">
-                <div className="relative m-0 w-full shrink-0 overflow-hidden rounded-xl  bg-white bg-clip-border text-gray-700">
-                  <img
-                    src={img}
-                    alt="image"
-                    className="h-72 w-full object-cover"
-                  />
-                </div>
-                <div className="p-3">
-                  <div className="font-bold text-[#387DF8]">
-                    <span className="flex gap-1 items-center">
-                      <MdLocationPin />
-                      {location}
-                    </span>
-                    <span className="flex gap-1 items-center">
-                      <MdAccessTimeFilled /> {time}
-                    </span>
-                  </div>
-
-                  <h4 className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                    {title}
-                  </h4>
-
-                  <p className="mb-4 block font-sans text-sm font-normal leading-relaxed text-gray-700 antialiased">
-                    {description}
-                  </p>
-                  <div className="flex justify-between text-xl font-bold text-[#387DF8]">
-                    <h2>Price: {price}$</h2>
-                    <a className="inline-block" href="#">
-                      <Link to={`/cart/${id}`}>
-                        <button
-                          className="flex bg-[#387DF8] select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all  disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                          type="button"
-                        >
-                          Details
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth="2"
-                            stroke="currentColor"
-                            aria-hidden="true"
-                            className="h-4 w-4"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                            ></path>
-                          </svg>
-                        </button>
-                      </Link>
-                    </a>
-                  </div>
-                </div>
+        <div>
+          <div className="m-2 rounded">
+            <div className="relative rounded md:flex justify-center items-center flex-row gap-2  bg-white bg-clip-border text-gray-700 shadow-md">
+              <div className="relative rounded m-0 w-full md:w-1/2 shrink-0 overflow-hidden   bg-white bg-clip-border text-gray-700">
+                <img
+                  src={img}
+                  alt="image"
+                  className="h-96 w-full rounded object-cover"
+                />
+              </div>
+              <div className="py-3 text-center md:text-left">
+                <h2 className="mb-2 block font-sans text-2xl text-[#387DF8] font-semibold leading-relaxed tracking-normal  rounded antialiased">
+                  {title}
+                </h2>
+                <h4 className="mb-2 block font-sans text-3xl text-[#387DF8] font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                  {title}
+                </h4>
+                <h2 className="text-base">{description}</h2>
+                <p className="mb-4 block font-sans text-2xl font-semibold leading-relaxed">
+                  Event Booking Price:{" "}
+                  <span className="font-bold text-[#387DF8]">{price}</span>
+                </p>
+                <Link className="mb-2" to={`/cart/${id}`}>
+                  <a className="inline-block" href="#">
+                    <button
+                      className="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-base font-bold  bg-[#387DF8] text-white transition-all disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                      type="button"
+                    >
+                      Booking Now
+                    </button>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>

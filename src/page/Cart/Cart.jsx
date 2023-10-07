@@ -35,7 +35,7 @@ const Cart = ({ cart }) => {
                       className="flex bg-[#387DF8] select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all  disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                       type="button"
                     >
-                      Details
+                      Event Details
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
