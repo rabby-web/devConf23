@@ -1,11 +1,12 @@
  [
       {
         "id": "1",
-        "img": "https://i.ibb.co/fSd6DLb/Rectangle-4287-2.png",
+        "img": "https://i.ibb.co/bsXZRYw/person-front-computer-working-html.jpg",
         "location": "Dhaka Bangladesh",
         "time": "2023-10-15, 10.30PM",
         "description": " Full-stack (MERN) web application developer, cloud practitioner, competitive coder, entrepreneur, and educator who constantly looks for new challenges to tackle in the real world. ",
-        "title": "How to learn Wev Development",
+        "title": "How to Learn Web Development",
+        "price": "500",
         "trainer": {
             "image": "https://devconfbd.com/_next/image?url=%2Fimages%2Fspeakers%2Fjhankar.png&w=384&q=75",
             "name": "Jhankar Mahbub",
@@ -14,12 +15,73 @@
           }
       },
       {
-        "id": "1",
-        "img": "https://i.ibb.co/fSd6DLb/Rectangle-4287-2.png",
+        "id": "2",
+        "img": "https://i.ibb.co/vYgSF0w/php-coding-computer-css-data-digital-function-concept.jpg",
         "location": "Dhaka Bangladesh",
         "time": "2023-10-15, 10.30PM",
         "description": " Full-stack (MERN) web application developer, cloud practitioner, competitive coder, entrepreneur, and educator who constantly looks for new challenges to tackle in the real world. ",
-        "title": "How to learn Wev Development",
+        "title": "How to Became a PHP Developer",
+        "price": "360",
+        "trainer": {
+            "image": "https://devconfbd.com/_next/image?url=%2Fimages%2Fspeakers%2Fjhankar.png&w=384&q=75",
+            "name": "Jhankar Mahbub",
+            "designation": " He serves as a senior web developer, author, YouTuber, teacher, and entrepreneur all at the same time.",
+            "company": "Founder, Programming Hero"
+          }
+      },
+      {
+        "id": "3",
+        "img": "https://i.ibb.co/M1knzQX/marketing-creative-collage-with-phone.jpg",
+        "location": "Dhaka Bangladesh",
+        "time": "2023-10-15, 10.30PM",
+        "description": " Full-stack (MERN) web application developer, cloud practitioner, competitive coder, entrepreneur, and educator who constantly looks for new challenges to tackle in the real world. ",
+        "title": "The Future of App Development",
+        "price": "360",
+        "trainer": {
+            "image": "https://devconfbd.com/_next/image?url=%2Fimages%2Fspeakers%2Fjhankar.png&w=384&q=75",
+            "name": "Jhankar Mahbub",
+            "designation": " He serves as a senior web developer, author, YouTuber, teacher, and entrepreneur all at the same time.",
+            "company": "Founder, Programming Hero"
+          }
+      },
+      {
+        "id": "4",
+        "img": "https://i.ibb.co/VgxXW3C/4380747.jpg",
+        "location": "Dhaka Bangladesh",
+        "time": "2023-10-15, 10.30PM",
+        "description": " Full-stack (MERN) web application developer, cloud practitioner, competitive coder, entrepreneur, and educator who constantly looks for new challenges to tackle in the real world. ",
+        "title": "Important of MERN/Full-Stack Stack",
+        "price": "360",
+        "trainer": {
+            "image": "https://devconfbd.com/_next/image?url=%2Fimages%2Fspeakers%2Fjhankar.png&w=384&q=75",
+            "name": "Jhankar Mahbub",
+            "designation": " He serves as a senior web developer, author, YouTuber, teacher, and entrepreneur all at the same time.",
+            "company": "Founder, Programming Hero"
+          }
+      },
+      {
+        "id": "5",
+        "img": "https://i.ibb.co/q1ZxyMF/1904-i402-013-Web-development-isometric-concept-composition.jpg",
+        "location": "Dhaka Bangladesh",
+        "time": "2023-10-15, 10.30PM",
+        "description": " Full-stack (MERN) web application developer, cloud practitioner, competitive coder, entrepreneur, and educator who constantly looks for new challenges to tackle in the real world. ",
+        "title": "Think Like a SWE",
+        "price": "360",
+        "trainer": {
+            "image": "https://devconfbd.com/_next/image?url=%2Fimages%2Fspeakers%2Fjhankar.png&w=384&q=75",
+            "name": "Jhankar Mahbub",
+            "designation": " He serves as a senior web developer, author, YouTuber, teacher, and entrepreneur all at the same time.",
+            "company": "Founder, Programming Hero"
+          }
+      },
+      {
+        "id": "6",
+        "img": "https://i.ibb.co/RC7RP09/21770.jpg",
+        "location": "Dhaka Bangladesh",
+        "time": "2023-10-15, 10.30PM",
+        "description": " Full-stack (MERN) web application developer, cloud practitioner, competitive coder, entrepreneur, and educator who constantly looks for new challenges to tackle in the real world. ",
+        "title": "Machine Learning",
+        "price": "360",
         "trainer": {
             "image": "https://devconfbd.com/_next/image?url=%2Fimages%2Fspeakers%2Fjhankar.png&w=384&q=75",
             "name": "Jhankar Mahbub",
