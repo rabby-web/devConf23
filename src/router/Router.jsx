@@ -7,6 +7,7 @@ import Register from "../page/Register/Register";
 import Details from "../page/Details/Details";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import About from "../page/About/About";
+import Blog from "../page/Blog/Blog";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,14 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <About></About>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/blog",
+        element: (
+          <PrivateRoute>
+            <Blog></Blog>
           </PrivateRoute>
         ),
       },

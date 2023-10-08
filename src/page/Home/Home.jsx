@@ -1,7 +1,7 @@
 import Banner from "../Banner/Banner";
 import DealSection from "../DealSection/DealSection";
 import Service from "../Service/Service";
-import Teacher from "../Teacher/Teacher";
+import Speaker from "../Speaker/Speaker";
 
 const Home = () => {
   return (
@@ -15,11 +15,10 @@ const Home = () => {
       <div>
         <Service></Service>
       </div>
+
       <div>
-        <Teacher></Teacher>
+        <Speaker></Speaker>
       </div>
-      <h2>Home Section</h2>
-      <div></div>
     </div>
   );
 };
