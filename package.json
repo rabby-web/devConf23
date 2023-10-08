@@ -20,6 +20,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.16.0",
     "sort-by": "^1.2.0",
+    "surge": "^0.23.1",
     "sweetalert": "^2.1.2",
     "swiper": "^10.3.1"
   },
