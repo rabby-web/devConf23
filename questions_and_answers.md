@@ -18,9 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C `{}`
 
-<i>Write your explanation here</i>
+<i>Since an empty object is placed as the value of the variable, the value will be that.</i>
 
 </p>
 </details>
@@ -43,9 +43,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: C `{}`
+#### Answer: C `"12"`
 
-<i>Since an empty object is placed as the value of the variable, the value will be that.</i>
+<i>As we know, if we add a string value to any number, the number value is converted to string, and if we add two strings, they sit side by side.</i>
 
 </p>
 </details>
@@ -69,9 +69,10 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A `['🍕', '🍫', '🥑', '🍔']`
 
-<i>Write your explanation here</i>
+<i>A value of the original array has been used elsewhere without affecting the original array.
+So if you console the food array, you can see the A number value.</i>
 
 </p>
 </details>
@@ -94,9 +95,10 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B `Hi there, undefined`
 
-<i>Write your explanation here</i>
+<i>No parameters were used when calling the function, nor were any default parameters set.
+So when I use the value from the parameter somewhere, I get its value as undefined.</i>
 
 </p>
 </details>
@@ -122,9 +124,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C `3`
 
-<i>Write your explanation here</i>
+<i>Here the num array is looped through using forEach, and each time one value is passed through the condition, if it is true, the value of count will increase by 1, the first condition is getting 0 value, 0 is naturally false value so it goes to the next loop instead of being counted, thus looping the value of count is 3.</i>
 
 </p>
 </details>
