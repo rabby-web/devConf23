@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import swal from "sweetalert";
 import { updateProfile } from "firebase/auth";
 import { AuthContext } from "../../provider/AuthProvider";
+import Social from "../Social/Social";
 
 // import { Link } from "react-router-dom";
 
@@ -179,6 +180,7 @@ const Register = () => {
                 )}
               </div>
             </form>
+            <Social></Social>
           </div>
         </div>
       </div>

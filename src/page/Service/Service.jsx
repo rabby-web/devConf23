@@ -12,7 +12,7 @@ const Service = () => {
   return (
     <div>
       <div className="text-center">
-        <div className="w-full flex justify-center">
+        <div className="w-full flex justify-center ">
           <button className="rounded text-white bg-[#387DF8] py-1 px-8 text-2xl font-semibold">
             Service
           </button>

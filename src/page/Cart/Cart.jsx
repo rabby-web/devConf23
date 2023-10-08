@@ -9,7 +9,7 @@ const Cart = ({ cart }) => {
         <div className="m-3">
           <div className="relative flex  w-full max-w-[48rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md border">
             <div className="relative m-0 w-full shrink-0 overflow-hidden rounded-xl  bg-white bg-clip-border text-gray-700">
-              <img src={img} alt="image" className="h-60 w-full object-cover" />
+              <img src={img} alt="image" className="h-64 w-full object-cover" />
             </div>
             <div className="p-3">
               <div className="font-bold text-[#387DF8]">

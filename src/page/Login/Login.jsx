@@ -1,11 +1,14 @@
 import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
 import swal from "sweetalert";
+import Social from "../Social/Social";
 
 const Login = () => {
   const { signInUser } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const [isShow, setIsShow] = useState(false);
   const [registerError, setRegisterError] = useState("");
@@ -20,6 +23,7 @@ const Login = () => {
       .then((result) => {
         console.log(result.user);
         e.target.reset();
+        navigate(location.state ? location?.state : "/");
         swal({
           title: "Success",
           text: "Login Your Account Successfully",
@@ -112,6 +116,7 @@ const Login = () => {
                 )} */}
               </div>
             </form>
+            <Social></Social>
           </div>
         </div>
       </div>

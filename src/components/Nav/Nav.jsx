@@ -1,7 +1,16 @@
-import { NavLink } from "react-router-dom";
-import logo from "../../assets/logo-e.png";
+import { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../provider/AuthProvider";
 
 const Nav = () => {
+  const { user, logOut } = useContext(AuthContext);
+  const handleSignOut = () => {
+    logOut()
+      .then((result) => {
+        console.log(result.user);
+      })
+      .catch((error) => console.error(error));
+  };
   const navLinks = (
     <>
       <li className="text-xl font-bold">
@@ -18,9 +27,9 @@ const Nav = () => {
           Home
         </NavLink>
       </li>
-      {/* <li className="text-xl font-bold">
+      <li className="text-xl font-bold">
         <NavLink
-          to="/details"
+          to="/about"
           className={({ isActive, isPending }) =>
             isPending
               ? "pending "
@@ -29,9 +38,9 @@ const Nav = () => {
               : "text-[#387DF8]"
           }
         >
-          Details
+          About
         </NavLink>
-      </li> */}
+      </li>
       <li className="text-xl font-bold">
         <NavLink
           to="/login"
@@ -97,30 +106,21 @@ const Nav = () => {
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
         <div className="navbar-end">
-          <div className="dropdown dropdown-end">
-            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-              <div className="w-10 border-2 border-[#387DF8] rounded-full">
-                <img src={logo} />
-              </div>
-            </label>
-            <ul
-              tabIndex={0}
-              className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
+          {user ? (
+            <button
+              onClick={handleSignOut}
+              className="text-[#387DF8] hover:bg-[#387DF8] hover:text-[white] font-semibold px-4 py-2 rounded text-lg border border-[#387DF8]"
             >
-              <li>
-                <a className="justify-between">
-                  Profile
-                  <span className="badge">New</span>
-                </a>
-              </li>
-              <li>
-                <a>Settings</a>
-              </li>
-              <li>
-                <a>Logout</a>
-              </li>
-            </ul>
-          </div>
+              Log Out
+            </button>
+          ) : (
+            <Link to="/login">
+              {" "}
+              <button className="text-[#387DF8] hover:bg-[#387DF8] hover:text-[white] font-semibold px-4 py-2 rounded text-lg border border-[#387DF8]">
+                Log In
+              </button>{" "}
+            </Link>
+          )}
         </div>
       </div>
     </div>
