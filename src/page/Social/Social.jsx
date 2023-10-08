@@ -31,7 +31,7 @@ const Social = () => {
         onClick={handleGoogleLogin}
         className="flex w-full justify-center  text-[#387DF8] items-center text-lg font-semibold gap-5 border-2 rounded-full py-3 px-5 "
       >
-        <FcGoogle></FcGoogle> Continue with Facebook
+        <FcGoogle></FcGoogle> Continue with Google
       </button>
     </div>
   );
