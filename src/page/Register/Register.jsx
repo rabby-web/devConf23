@@ -2,14 +2,13 @@ import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import swal from "sweetalert";
-import { updateProfile } from "firebase/auth";
 import { AuthContext } from "../../provider/AuthProvider";
 import Social from "../Social/Social";
 
 // import { Link } from "react-router-dom";
 
 const Register = () => {
-  const { createUser } = useContext(AuthContext);
+  const { createUser, profileUpdate } = useContext(AuthContext);
   const [isShow, setIsShow] = useState(false);
   const [registerError, setRegisterError] = useState("");
   const [success, setSuccess] = useState("");
@@ -17,10 +16,11 @@ const Register = () => {
   const handleRegister = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
+    const photo = e.target.photo.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
     // const accepted = e.target.terms.checked;
-    console.log(name, email, password);
+    console.log(name, email, password, photo);
     // password validation
     if (password.length < 6) {
       setRegisterError("password should be at least 6 characters or longer");
@@ -42,12 +42,14 @@ const Register = () => {
         e.target.reset();
         setSuccess("User create successfully");
         // update profile
-        updateProfile(result.user, {
-          displayName: name,
-          photoURL: "https://example.com/jane-q-user/profile.jpg",
-        }).catch((error) => console.error(error));
-        // send verification email
-
+        profileUpdate(name, photo)
+          .then((result) => {
+            console.log("update", result.user);
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+        // tost
         swal({
           title: "Success",
           text: "Registration Successfully",
@@ -82,6 +84,22 @@ const Register = () => {
                   id="text"
                   className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
                   placeholder="Name"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="text"
+                  className="block mb-2 text-sm font-medium text-gray-900"
+                >
+                  Photo URL
+                </label>
+                <input
+                  type="text"
+                  name="photo"
+                  id="text"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                  placeholder="Photo URL"
                   required
                 />
               </div>

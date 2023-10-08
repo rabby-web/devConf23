@@ -1,3 +1,8 @@
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
+
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 const Banner = () => {
   return (
@@ -5,7 +10,7 @@ const Banner = () => {
       <div className="w-full h-[80vh] justify-center bg-[url(https://i.ibb.co/Czn0vsF/dev-co.jpg)] bg-no-repeat bg-cover bg-center">
         <div className="text-center bg-[#1f07255e] h-full w-full flex items-center justify-center">
           <div className="flex flex-col-reverse  md:flex-row justify-between items-center gap-5 p-2">
-            <div className=" space-y-3">
+            <div className=" space-y-3" data-aos="zoom-in">
               <h1 className="text-3xl font-bold text-white">devConf23</h1>
               <h2 className="text-3xl md:text-5xl font-bold inline-block p-2 rounded-md bg-[#1306098e] text-[#387DF8]">
                 The 2023 Developer Conference

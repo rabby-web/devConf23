@@ -1,3 +1,7 @@
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 const Speaker = () => {
   return (
     <div className="bg-slate-100 my-10 mx-2 rounded-md">
@@ -6,7 +10,10 @@ const Speaker = () => {
       </h2>
       <div className="container flex flex-col items-center justify-center p-4 mx-auto sm:p-10">
         <div className="flex flex-row flex-wrap-reverse justify-center mt-8">
-          <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 hover:text-white xl:w-64 dark:bg-white hover:bg-[#387DF8] transition duration-700 dark:text-gray-800 aos-init aos-animate">
+          <div
+            className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 hover:text-white xl:w-64 dark:bg-white hover:bg-[#387DF8] transition duration-700 dark:text-gray-800 aos-init aos-animate"
+            data-aos="zoom-in"
+          >
             <img
               src="https://devconfbd.com/_next/image?url=%2Fimages%2Fspeakers%2Fnayem.png&w=384&q=75"
               className="self-center flex-shrink-0 w-32 h-32 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500"
@@ -21,7 +28,10 @@ const Speaker = () => {
               </h2>
             </div>
           </div>
-          <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 hover:text-white xl:w-64 dark:bg-white hover:bg-[#387DF8] transition duration-700 dark:text-gray-800 aos-init aos-animate">
+          <div
+            className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 hover:text-white xl:w-64 dark:bg-white hover:bg-[#387DF8] transition duration-700 dark:text-gray-800 aos-init aos-animate"
+            data-aos="zoom-in"
+          >
             <img
               src="https://devconfbd.com/_next/image?url=%2Fimages%2Fspeakers%2Fhasin-vai.png&w=384&q=75"
               className="self-center flex-shrink-0 w-32 h-32 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500"
@@ -36,7 +46,10 @@ const Speaker = () => {
               </h2>
             </div>
           </div>
-          <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 hover:text-white xl:w-64 dark:bg-white hover:bg-[#387DF8] transition duration-700 dark:text-gray-800 aos-init aos-animate">
+          <div
+            className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 hover:text-white xl:w-64 dark:bg-white hover:bg-[#387DF8] transition duration-700 dark:text-gray-800 aos-init aos-animate"
+            data-aos="zoom-in"
+          >
             <img
               src="https://devconfbd.com/_next/image?url=%2Fimages%2Fspeakers%2Fmamun-abdullah.png&w=384&q=75"
               className="self-center flex-shrink-0 w-32 h-32 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500"
@@ -51,7 +64,10 @@ const Speaker = () => {
               </h2>
             </div>
           </div>
-          <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 hover:text-white xl:w-64 dark:bg-white hover:bg-[#387DF8] transition duration-700 dark:text-gray-800 aos-init aos-animate">
+          <div
+            className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 hover:text-white xl:w-64 dark:bg-white hover:bg-[#387DF8] transition duration-700 dark:text-gray-800 aos-init aos-animate"
+            data-aos="zoom-in"
+          >
             <img
               src="https://devconfbd.com/_next/image?url=%2Fimages%2Fspeakers%2Frabbil.png&w=384&q=75"
               className="self-center flex-shrink-0 w-32 h-32 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500"
@@ -66,7 +82,10 @@ const Speaker = () => {
               </h2>
             </div>
           </div>
-          <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 hover:text-white xl:w-64 dark:bg-white hover:bg-[#387DF8] transition duration-700 dark:text-gray-800 aos-init aos-animate">
+          <div
+            className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 hover:text-white xl:w-64 dark:bg-white hover:bg-[#387DF8] transition duration-700 dark:text-gray-800 aos-init aos-animate"
+            data-aos="zoom-in"
+          >
             <img
               src="https://devconfbd.com/_next/image?url=%2Fimages%2Fspeakers%2Fzulkaernine.png&w=384&q=75"
               className="self-center flex-shrink-0 w-32 h-32 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500"
@@ -79,7 +98,10 @@ const Speaker = () => {
               <h2 className="text-xl font-medium">Software Engineer, Google</h2>
             </div>
           </div>
-          <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 hover:text-white xl:w-64 dark:bg-white hover:bg-[#387DF8] transition duration-700 dark:text-gray-800 aos-init aos-animate">
+          <div
+            className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 hover:text-white xl:w-64 dark:bg-white hover:bg-[#387DF8] transition duration-700 dark:text-gray-800 aos-init aos-animate"
+            data-aos="zoom-in"
+          >
             <img
               src="https://devconfbd.com/_next/image?url=%2Fimages%2Fspeakers%2Fjhankar.png&w=384&q=75"
               className="self-center flex-shrink-0 w-32 h-32 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500"

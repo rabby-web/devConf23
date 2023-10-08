@@ -1,6 +1,13 @@
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 const Footer = () => {
   return (
-    <div className="w-full h-auto justify-center bg-[url(https://i.ibb.co/WtwcXk9/rabbivai.jpg)] bg-no-repeat bg-cover bg-center">
+    <div
+      className="w-full h-auto justify-center bg-[url(https://i.ibb.co/WtwcXk9/rabbivai.jpg)] bg-no-repeat bg-cover bg-center"
+      data-aos="fade-down"
+    >
       <footer className="footer footer-center p-10  text-white rounded bg-[#070607c0]">
         <nav className="grid grid-flow-col gap-4">
           <a className="link link-hover">Home</a>

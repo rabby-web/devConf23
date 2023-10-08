@@ -2,6 +2,10 @@ import { PiPlugsConnectedFill } from "react-icons/pi";
 import { BiSolidUserAccount } from "react-icons/bi";
 import { GiSkills } from "react-icons/gi";
 import { MdJoinInner } from "react-icons/md";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 const DealSection = () => {
   return (
     <div>
@@ -10,7 +14,10 @@ const DealSection = () => {
           Developer Guidance
         </button>
       </div>
-      <div className="text-[#387DF8] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 m-2">
+      <div
+        className="text-[#387DF8] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 m-2"
+        data-aos="fade-left"
+      >
         <div className="border flex justify-center items-center gap-4 p-3">
           <div className="text-6xl ">
             <PiPlugsConnectedFill></PiPlugsConnectedFill>
@@ -22,7 +29,10 @@ const DealSection = () => {
             </p>
           </div>
         </div>
-        <div className="border flex justify-center items-center gap-4 p-3">
+        <div
+          className="border flex justify-center items-center gap-4 p-3"
+          data-aos="fade-left"
+        >
           <div className="text-6xl">
             <BiSolidUserAccount></BiSolidUserAccount>
           </div>
@@ -33,7 +43,10 @@ const DealSection = () => {
             </p>
           </div>
         </div>
-        <div className="border flex justify-center items-center gap-4 p-3">
+        <div
+          className="border flex justify-center items-center gap-4 p-3"
+          data-aos="fade-left"
+        >
           <div className="text-6xl ">
             <MdJoinInner></MdJoinInner>
           </div>
@@ -44,7 +57,10 @@ const DealSection = () => {
             </p>
           </div>
         </div>
-        <div className="border flex justify-center items-center gap-4 p-3">
+        <div
+          className="border flex justify-center items-center gap-4 p-3"
+          data-aos="fade-left"
+        >
           <div className="text-6xl ">
             <GiSkills></GiSkills>
           </div>

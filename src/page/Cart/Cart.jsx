@@ -5,7 +5,12 @@ const Cart = ({ cart }) => {
     cart || {};
   return (
     <div>
-      <div className="flex items-center justify-center my-5 ">
+      <div
+        className="flex items-center justify-center my-5"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+      >
         <div className="m-3 ">
           <div className="relative flex w-full max-w-[48rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md border">
             <div className="relative m-0 w-full shrink-0 overflow-hidden rounded-xl  bg-white bg-clip-border text-gray-700">

@@ -1,11 +1,21 @@
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
+
 const Blog = () => {
   return (
     <div>
-      <section className="bg-white dark:bg-gray-200 text-[#387DF8]">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+      <section className="bg-white dark:bg-gray-200 text-[#387DF8] ">
+        <div
+          className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
           <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
             <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-[#387DF8]">
-              Our Blog
+              Event Blog
             </h2>
             <p className=" text-[#387DF8] font-semibold sm:text-2xl ">
               We use an agile approach to test assumptions and connect with the
@@ -48,7 +58,7 @@ const Blog = () => {
                 <div className="flex items-center space-x-4">
                   <img
                     className="w-7 h-7 rounded-full"
-                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
+                    src="https://devconfbd.com/_next/image?url=%2Fimages%2Fspeakers%2Fsamnan.png&w=384&q=75"
                     alt="Jese Leos avatar"
                   />
                   <span className="font-medium dark:text-white">Jese Leos</span>
@@ -113,7 +123,7 @@ const Blog = () => {
                 <div className="flex items-center space-x-4">
                   <img
                     className="w-7 h-7 rounded-full"
-                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
+                    src="https://devconfbd.com/_next/image?url=%2Fimages%2Fspeakers%2Fnazib.png&w=384&q=75"
                     alt="Bonnie Green avatar"
                   />
                   <span className="font-medium dark:text-white">

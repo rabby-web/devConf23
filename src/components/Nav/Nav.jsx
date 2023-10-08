@@ -121,12 +121,34 @@ const Nav = () => {
         </div>
         <div className="navbar-end">
           {user ? (
-            <button
-              onClick={handleSignOut}
-              className="text-[#387DF8] hover:bg-[#387DF8] hover:text-[white] font-semibold px-4 py-2 rounded text-lg border border-[#387DF8]"
-            >
-              Log Out
-            </button>
+            <div className="dropdown dropdown-end">
+              <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                <div className="w-10 rounded-full">
+                  <img src={user.photoURL} />
+                </div>
+              </label>
+              <ul
+                tabIndex={0}
+                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-72"
+              >
+                <li>
+                  <a className="justify-between font-semibold text-[#387DF8]">
+                    {user.displayName}
+                  </a>
+                </li>
+                <li>
+                  <a className="justify-between text-[#387DF8]">{user.email}</a>
+                </li>
+                <li>
+                  <button
+                    onClick={handleSignOut}
+                    className="text-[#387DF8] hover:bg-[#387DF8] hover:text-[white] font-semibold px-3 py-1 rounded text-base border border-[#387DF8] "
+                  >
+                    Log Out
+                  </button>
+                </li>
+              </ul>
+            </div>
           ) : (
             <Link to="/login">
               {" "}

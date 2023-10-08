@@ -1,8 +1,15 @@
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 const About = () => {
   return (
     <div>
       <div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
-        <div className="flex flex-col lg:flex-row justify-between gap-8">
+        <div
+          className="flex flex-col lg:flex-row justify-between gap-8"
+          data-aos="zoom-in-left"
+        >
           <div className="w-full lg:w-5/12 flex flex-col justify-center">
             <h1 className="text-3xl lg:text-4xl font-bold leading-9 text-gray-800  pb-4">
               About Us
@@ -37,7 +44,10 @@ const About = () => {
           </div>
         </div>
 
-        <div className="flex lg:flex-row flex-col justify-between gap-8 pt-12">
+        <div
+          className="flex lg:flex-row flex-col justify-between gap-8 pt-12"
+          data-aos="zoom-in-right"
+        >
           <div className="w-full lg:w-5/12 flex flex-col justify-center">
             <h1 className="text-3xl lg:text-4xl font-bold leading-9 text-gray-800  pb-4">
               Our Conference Center
