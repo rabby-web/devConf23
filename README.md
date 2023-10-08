@@ -1,8 +1,11 @@
-# React + Vite
+# DevConf 23
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live-Link: [@Live-Link](https://github.com/programming-hero-web-course-4/b8a9-event-management-rabby-web)
 
-Currently, two official plugins are available:
+- fast:
+  Bangladesh
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- fast:
+  Bangladesh
+- fast:
+  Bangladesh
