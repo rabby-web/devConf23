@@ -16,7 +16,7 @@ const Banner = () => {
                 The 2023 Developer Conference
               </h2>
               <p className="text-white text-lg">
-                Join us at devConf 23 to learn from the best and brightest minds
+                Join us at DevConf 23 to learn from the best and brightest minds
                 in programming, including our esteemed guest speakers.
               </p>
               <button className="bg-[#387DF8] text-white text-xl font-semibold py-3 px-5 rounded flex justify-center items-center mb-6 mx-auto md:text-block">
