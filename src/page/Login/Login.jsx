@@ -11,7 +11,7 @@ const Login = () => {
   const location = useLocation();
 
   const [isShow, setIsShow] = useState(false);
-  const [registerError, setRegisterError] = useState("");
+  const [loginError, setLoginError] = useState("");
   // const [success, setSuccess] = useState("");
 
   const handleLogin = (e) => {
@@ -33,7 +33,7 @@ const Login = () => {
       })
       .catch((error) => {
         console.error(error);
-        setRegisterError(error.message);
+        setLoginError(error.message);
       });
   };
 
@@ -46,6 +46,11 @@ const Login = () => {
               Login to your account
             </h1>
             <form onSubmit={handleLogin} className="space-y-4 md:space-y-6">
+              {loginError && (
+                <div>
+                  <p className="text-red-600 font-bold">{loginError}</p>
+                </div>
+              )}
               <div>
                 <label
                   htmlFor="email"
@@ -104,11 +109,6 @@ const Login = () => {
                 </Link>
               </p>
               <div className="text-center">
-                {registerError && (
-                  <div>
-                    <p className="text-red-600 font-bold">{registerError}</p>
-                  </div>
-                )}
                 {/* {success && (
                   <div className="text-blue-600 font-bold">
                     <p>{success}</p>

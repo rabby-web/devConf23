@@ -16,7 +16,7 @@ const DealSection = () => {
       </div>
       <div
         className="text-[#387DF8] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 m-2"
-        data-aos="fade-left"
+        data-aos="fade-up"
       >
         <div className="border flex justify-center items-center gap-4 p-3">
           <div className="text-6xl ">
@@ -31,7 +31,7 @@ const DealSection = () => {
         </div>
         <div
           className="border flex justify-center items-center gap-4 p-3"
-          data-aos="fade-left"
+          data-aos="fade-down"
         >
           <div className="text-6xl">
             <BiSolidUserAccount></BiSolidUserAccount>
@@ -45,7 +45,7 @@ const DealSection = () => {
         </div>
         <div
           className="border flex justify-center items-center gap-4 p-3"
-          data-aos="fade-left"
+          data-aos="fade-up"
         >
           <div className="text-6xl ">
             <MdJoinInner></MdJoinInner>
@@ -59,7 +59,7 @@ const DealSection = () => {
         </div>
         <div
           className="border flex justify-center items-center gap-4 p-3"
-          data-aos="fade-left"
+          data-aos="fade-down"
         >
           <div className="text-6xl ">
             <GiSkills></GiSkills>

@@ -10,17 +10,17 @@ AOS.init();
 const Home = () => {
   return (
     <div>
-      <div className="mb-6 " data-aos="zoom-in">
+      <div className="mb-6" data-aos="zoom-in">
         <Banner></Banner>
       </div>
-      <div className="my-10" data-aos="fade-left">
+      <div className="my-10" data-aos="fade-up">
         <DealSection></DealSection>
       </div>
       <div className="" data-aos="zoom-in">
         <Service></Service>
       </div>
 
-      <div data-aos="fade-left">
+      <div data-aos="fade-down">
         <Speaker></Speaker>
       </div>
     </div>

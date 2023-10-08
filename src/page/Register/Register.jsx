@@ -71,6 +71,16 @@ const Register = () => {
               Register to your account
             </h1>
             <form onSubmit={handleRegister} className="space-y-4 md:space-y-6">
+              {registerError && (
+                <div>
+                  <p className="text-red-600 font-bold">{registerError}</p>
+                </div>
+              )}
+              {success && (
+                <div className="text-blue-600 font-bold">
+                  <p>{success}</p>
+                </div>
+              )}
               <div>
                 <label
                   htmlFor="email"
@@ -185,18 +195,7 @@ const Register = () => {
                   </button>
                 </Link>
               </p>
-              <div className="text-center">
-                {registerError && (
-                  <div>
-                    <p className="text-red-600 font-bold">{registerError}</p>
-                  </div>
-                )}
-                {success && (
-                  <div className="text-blue-600 font-bold">
-                    <p>{success}</p>
-                  </div>
-                )}
-              </div>
+              <div className="text-center"></div>
             </form>
             <Social></Social>
           </div>

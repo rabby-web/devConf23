@@ -16,7 +16,7 @@ const Service = () => {
       <div className="text-center" data-aos="fade-right">
         <div className="w-full flex justify-center ">
           <button className="rounded text-white bg-[#387DF8] py-1 px-8 text-2xl font-semibold">
-            Service
+            Services
           </button>
         </div>
         <p className="text-[#387DF8] text-lg font-medium">
